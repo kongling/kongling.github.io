@@ -28,7 +28,7 @@
 <meta property="og:description" content="MySQL Event 需求背景: 系统中有一个表存储了系统用户的行为数据，现需要提供给第三方使用，又不想让第三方直接读取当前数据表，因此打算在当天的凌晨1点，读取前一天的数据到中间表去，另创建一个用户授予中间表的读权限  什么是MySQL Event MySQL 5.1版本开始引进event概念。event既“时间触发器”，与triggers的事件触发不同，event类似与Linux Cront">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-11-29T11:46:04.000Z">
-<meta property="article:modified_time" content="2021-11-29T12:28:31.984Z">
+<meta property="article:modified_time" content="2021-11-29T13:02:26.700Z">
 <meta property="article:author" content="Maughan">
 <meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
@@ -196,7 +196,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-11-29 19:46:04 / Modified: 20:28:31" itemprop="dateCreated datePublished" datetime="2021-11-29T19:46:04+08:00">2021-11-29</time>
+      <time title="Created: 2021-11-29 19:46:04 / Modified: 21:02:26" itemprop="dateCreated datePublished" datetime="2021-11-29T19:46:04+08:00">2021-11-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -230,7 +230,7 @@
 
 <h2 id="查看事件是否创建成功"><a href="#查看事件是否创建成功" class="headerlink" title="查看事件是否创建成功"></a>查看事件是否创建成功</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> information_schema.EVENTS;</span><br></pre></td></tr></table></figure>
 
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>等待第二天查看数据是否成功插入。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>等待第二天查看数据是否成功插入,以及information_schema.events表里的执行数据。</p>
 
     </div>
 
